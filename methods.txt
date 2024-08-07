@@ -1,0 +1,84 @@
+import java.util.*;
+class Main
+{
+  public static void main (String[]args)
+  {
+      
+                                          //Inputs//
+	String str = "Terv,top";
+	
+	int length = str.length ();
+	
+	char AtIndex = str.charAt (5);
+	
+	String substring = str.substring (3);
+	
+	String substringwithindex = str.substring (1, 5);
+	
+	int indexofchar = str.indexOf (',');
+	
+	int indexofcharfromindex = str.indexOf ('o', 5);
+	
+	int lastindexofchar = str.lastIndexOf ('o');
+	
+	String replacedstring = str.replace ('t', 'T');
+	
+	String lowercase = str.toLowerCase ();
+	
+	String uppercase = str.toUpperCase ();
+	
+	String trimmedstring = "  top freshers technology pvt ltd".trim ();
+	
+	String[] splitstring = str.split (",");
+	for (String s:splitstring){
+	      System.out.println (s);
+	}
+	
+	boolean startswith=str.startsWith("Terv");
+	
+	boolean endswith=str.endsWith("Terv");
+	
+	boolean isequalignorecase=str.equalsIgnoreCase("terv,top!");
+	
+	String s2="terv,Top!";
+	int compare=str.compareToIngnoreCase(s2);
+	  
+                                        ///outputs///
+
+	  System.out.println (length);
+	
+	  System.out.println (AtIndex);
+	
+	  System.out.println (substring);
+	
+	  System.out.println (substringwithindex);
+	
+	  System.out.println (indexofchar);
+	
+	  System.out.println (indexofcharfromindex);
+	
+	  System.out.println (lastindexofchar);
+	
+	  System.out.println (replacedstring);
+	
+	  System.out.println (lowercase);
+	
+	  System.out.println (uppercase);
+	
+	  System.out.println (trimmedstring);
+	  
+	   System.out.println (startswith);
+	   
+	   System.out.println (endswith);
+	   
+	   System.out.println (isequalignorecase);
+	   
+	   // System.out.println (str.ReplaceFirst("T","U"));
+	    
+	    //System.out.println (str.ReplaceAll("Terv","top"));
+	    
+	
+        System.out.println(compare);
+  }
+
+}
